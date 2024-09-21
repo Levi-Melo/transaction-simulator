@@ -4,7 +4,7 @@ import time
 from infra.producer import produce_message
 from entities.transaction import create_transaction
 
-def generate_simulated_transactions():
+def simulated_transactions():
     max_number = random.randint(1, 100)
     users = []
     for _ in range(10):

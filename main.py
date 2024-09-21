@@ -1,6 +1,6 @@
-from usecase.simulate import generate_simulated_transactions
+from usecase.simulate import simulated_transactions
 
 while True:
-    generate_simulated_transactions()
+    simulated_transactions()
 
 
