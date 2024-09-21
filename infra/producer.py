@@ -8,7 +8,7 @@ conf = {
 
 p = Producer(conf)
     
-def S(message):
+def produce_message(message):
 
     try:
         # Envia a mensagem
