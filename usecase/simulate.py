@@ -1,8 +1,8 @@
 import random
 import time
 
-from producer import produce_message
-from transaction import create_transaction
+from infra.producer import produce_message
+from entities.transaction import create_transaction
 
 def generate_simulated_transactions():
     max_number = random.randint(1, 100)
