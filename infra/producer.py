@@ -9,11 +9,10 @@ conf = {
 p = Producer(conf)
     
 def produce_message(message):
-
     try:
         # Envia a mensagem
-        p.produce("meu-topico", value=message, callback=delivery_callback)
-        print("Mensagem enviada com sucesso para o tópico meu-topico")
+        p.produce("sink-transactions", value=message, callback=delivery_callback)
+        print("Mensagem enviada com sucesso para o tópico: sink-transactions")
     except Exception as e:
         print(f"Erro ao enviar mensagem: {str(e)}")
 
